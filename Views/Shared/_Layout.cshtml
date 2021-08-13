@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - AddressBook - MVCDemo</title>
+    <title>@ViewData["Title"] - AddressBook - MVC</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
     <link rel="icon" href="./img/logo.png" type="image/png">
@@ -20,10 +20,10 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Contacts" asp-action="Index">Address Book</a>
+                            <a class="nav-link text-light" asp-area="" asp-controller="Contacts" asp-action="Index">Address Book</a>
                         </li>
                     </ul>
                 </div>
@@ -31,18 +31,18 @@
         </nav>
     </header>
     <div class="container">
-        <main role="main" class="p-sm-5 p-3">
+        <main role="main" class="p-sm-5 p-3 min-vh-100">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
+    <footer class="border-top footer text-muted p-5">
         <div class="container">
             <div class="row text-center">
                 <div class="col-12">
                     <ul class="list-group list-unstyled">
-                        <li class="text-dark">&copy; 2021 - Address Book - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a></li>
-                        <li class="text-dark"><a href="https://www.yohancraft.com/" target="_blank">www.yohancraft.com</a></li>
+                        <li class="text-light">&copy; 2021 - Address Book - <a asp-area="" asp-controller="Home" asp-action="Privacy" class="text-decoration-none text-danger">Privacy</a></li>
+                        <li class="text-light"><a href="https://www.yohancraft.com/" target="_blank" class="text-decoration-none text-danger">www.yohancraft.com</a></li>
                     </ul>
                 </div>
             </div>           
