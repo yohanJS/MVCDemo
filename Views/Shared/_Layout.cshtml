@@ -6,12 +6,13 @@
     <title>@ViewData["Title"] - AddressBook - MVCDemo</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="icon" href="./img/logo.png" type="image/png">
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">MVCDemo</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><img class="img-fluid" src="~/img/logo.png" /></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -22,7 +23,7 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Contacts" asp-action="Index">Address Book</a>
                         </li>
                     </ul>
                 </div>
@@ -30,14 +31,21 @@
         </nav>
     </header>
     <div class="container">
-        <main role="main" class="pb-3">
+        <main role="main" class="p-sm-5 p-3">
             @RenderBody()
         </main>
     </div>
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2021 - MVCDemo - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            <div class="row text-center">
+                <div class="col-12">
+                    <ul class="list-group list-unstyled">
+                        <li class="text-dark">&copy; 2021 - Address Book - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a></li>
+                        <li class="text-dark"><a href="https://www.yohancraft.com/" target="_blank">www.yohancraft.com</a></li>
+                    </ul>
+                </div>
+            </div>           
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
