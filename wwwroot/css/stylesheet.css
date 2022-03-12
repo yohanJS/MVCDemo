@@ -1,0 +1,21 @@
+:root {
+    --primary-color: #11aaa6;
+    --secondary-color: #fe5a00;
+    --light-color: #EBEBEB;
+    --dark-color: #292929;
+    --white-color: #eee;
+    --black-color: #111;
+    --emerald-green: #50C878;
+    --red-cherry: #D2042D;
+    --yellow-amber: #FFBF00;
+    --tomato: #FF6347;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.border-mine {
+    border: 1px solid #fe5a00;
+}
