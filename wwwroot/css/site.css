@@ -1,18 +1,18 @@
 :root {
-    --primary-color: #F17720;
-    --secondary-color: #00A7E1;
+    --primary-color: #11aaa6;
+    --secondary-color: #fe5a00;
     --light-color: #EBEBEB;
     --dark-color: #292929;
     --white-color: #eee;
     --black-color: #111;
+    --emerald-green: #50C878;
+    --red-cherry: #D2042D;
+    --yellow-amber: #FFBF00;
+    --tomato: #FF6347;
 }
-body {
-    color: var(--black-color);
-}
-nav, footer {
-    background: #000428; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #004e92, #000428); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+* {
+    box-sizing: content-box;
+    font-family: 'Poppins', sans-serif;
 }
 .txt-color {
     color: var(--primary-color);
@@ -36,6 +36,9 @@ main>.container {
 }
 .css-color {
     color: #264de4;
+}
+.github, .linkedin {
+    color: var(--light-color);
 }
 footer i:hover {
     opacity: 0.6;
